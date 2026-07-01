@@ -12,11 +12,16 @@ Version 2 focused on improving the overall mechanical design while significantly
 
 - Reduced the overall size of the base.
 - Reduced the size of the platform supporting the second joint.
+- Changed the arm on the second stepper to allow room for an additional servo.
 - Added a third servo to create a 3-DOF robotic arm.
 
 ### Design Reasoning
 
 The original design demonstrated the concept successfully, but I felt the base and upper platform occupied more space than necessary. This redesign focused on making the robot more compact while maintaining stability. Adding a third degree of freedom also expanded the arm's workspace and provided a better platform for future robotics development.
+
+### Design Concerns 
+
+The base is too small to fit a stepper driver. 
 
 ---
 
@@ -29,7 +34,11 @@ The original design demonstrated the concept successfully, but I felt the base a
 
 ### Design Reasoning
 
-The original design required two separate Arduinos because I did not have a reliable power source capable of driving multiple motors simultaneously. The addition of the battery pack simplified the wiring, reduced hardware complexity, and made the overall system much easier to manage.
+The original design required two separate Arduinos because I did not have a reliable power source capable of driving multiple motors simultaneously. The addition of the battery pack simplified the wiring and made the overall system much easier to manage.
+
+### Design Concerns 
+
+The driver for the second stepper motor will need to be placed internally to avoid the tangling of wires as the base stepper rotates.
 
 ---
 
@@ -47,13 +56,9 @@ The original design required two separate Arduinos because I did not have a reli
 
 This version shifted the project away from manual push-button control and toward software-driven robotic control. Implementing position tracking and homing established the foundation needed for future features such as forward kinematics, inverse kinematics, and ROS integration.
 
----
+### Design Concerns 
 
-## Lessons Learned
-
-- Smaller mechanical designs require much more careful packaging of electronics.
-- Integrating the electrical and software systems early greatly simplifies future development.
-- Designing the robot as a scalable platform is just as important as making it functional.
+Each motor moves one at a time, which I do not like, I want to implement a way for the robot to go to pre-programmed positions while moving all motors simulataneously. I think messing with the inverse and forward kinematics will help me solve this in a cool way. 
 
 ---
 
