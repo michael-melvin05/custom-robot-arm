@@ -68,3 +68,4 @@ Each motor moves one at a time, which I do not like, I want to implement a way f
 - Implement forward kinematics.
 - Implement inverse kinematics.
 - Integrate with ROS2.
+- Improve overall mechanical design. 
