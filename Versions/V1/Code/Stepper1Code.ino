@@ -2,9 +2,7 @@
 
 const int stepsPerRevolution = 2048;
 
-
 Stepper stepperMotor(stepsPerRevolution, 8, 10, 9, 11);
-
 
 const int cwButton = 4;
 const int ccwButton = 7;
