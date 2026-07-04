@@ -27,10 +27,17 @@ This project is a custom robotic arm designed and built from the ground up to de
 ---
 
 
-## Gallery
+## Design Evolution
 
-*(Photos and videos coming soon.)*
+### Version 1
+Initial proof-of-concept focused on validating a basic robotic arm design.
 
+![V1 Robot Arm](Versions/V1/Images/V1-Iso.png)
+
+### Version 2
+Added a third degree of freedom, computer-controlled motion, and improved packaging.
+
+![V2 Robot Arm](Versions/V2/Images/V2-Iso.png)
 ---
 
 ## Project Roadmap
