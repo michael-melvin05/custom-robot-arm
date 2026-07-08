@@ -11,8 +11,10 @@ This project is a custom robotic arm designed and built from the ground up to de
 - Custom CAD designed in SolidWorks
 - 3D printed structural components
 - Arduino-based control system
-- Computer communication for joint control
-- Adjustable joint speed and step increments
+- Computer communication for robot control
+- Simultaneous multi-axis motion using AccelStepper
+- Predefined robot poses
+- Adjustable joint speed and acceleration
 - Software-based homing system without switches or sensors
 
 ---
@@ -40,9 +42,9 @@ Added a third degree of freedom, computer-controlled motion, and improved packag
 ![V2 Robot Arm](Versions/V2/Images/V2-Iso.png)
 
 ### Version 3
-bla bla bla.
+Refined the mechanical design and implemented coordinated multi-axis motion, creating a more robust platform for future kinematics, URDF generation, and ROS2 integration.
 
-![V2 Robot Arm](Versions/V3/Images/V3-Iso.png)
+![V3 Robot Arm](Versions/V3/Images/V3-Iso.png)
 
 
 ---
