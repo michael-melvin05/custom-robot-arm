@@ -38,6 +38,13 @@ Initial proof-of-concept focused on validating a basic robotic arm design.
 Added a third degree of freedom, computer-controlled motion, and improved packaging.
 
 ![V2 Robot Arm](Versions/V2/Images/V2-Iso.png)
+
+### Version 3
+bla bla bla.
+
+![V2 Robot Arm](Versions/V3/Images/V3-Iso.png)
+
+
 ---
 
 ## Project Roadmap
