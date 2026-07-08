@@ -26,7 +26,7 @@ The wrist servo mount was also redesigned to create a more secure attachment. Th
 
 - Internal wire routing can still be improved.
 - The structural improvements have not yet been tested under heavier payloads.
-- Bearing selection and joint tolerances may require further refinement in future versions.
+- The End-Effector can further be devloped and will be before version 4. 
 
 ---
 
