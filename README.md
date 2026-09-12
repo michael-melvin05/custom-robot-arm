@@ -1,5 +1,7 @@
 # Custom Robot Arm
 
+![V3 Robot Arm](Versions/V3/Images/RobotSmall.gif)
+
 ## Overview
 Custom 3D printed 3 DOF robot arm to improve in mechanical design, electronics, programming, and robotics with budget electronics. 
 
