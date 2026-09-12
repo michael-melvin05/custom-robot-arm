@@ -33,3 +33,7 @@ Improved design and expanded the software to support coordinated joint movement,
 
 ![V3 Robot Arm](Versions/V3/Images/V3-Iso.png)
 
+# RViz visual: 
+
+![V3 Robot Arm](Versions/V3/Images/RViz.png)
+
