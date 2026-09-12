@@ -1,71 +1,27 @@
-# Version 2 - Design Notes
+# Version 2 - Design Review
 
 ## Overview
 
-Version 2 focused on improving the overall mechanical design while significantly expanding the robot's capabilities. This revision introduced a third degree of freedom, consolidated the electrical system, and replaced the original button-based control system with computer-controlled motion.
-
----
+Version 2 was a major upgrade from the first prototype. I added a third degree of freedom, redesigned the arm to be more compact, moved everything onto one Arduino, and replaced the push-button controls with computer-based control.
 
 ## Mechanical
 
-### Design Changes
-
-- Reduced the overall size of the base.
-- Reduced the size of the platform supporting the second joint.
-- Changed the arm on the second stepper to allow room for an additional servo.
-- Added a third servo to create a 3-DOF robotic arm.
-
-### Design Reasoning
-
-The original design demonstrated the concept successfully, but I felt the base and upper platform occupied more space than necessary. This redesign focused on making the robot more compact while maintaining stability. Adding a third degree of freedom also expanded the arm's workspace and provided a better platform for future robotics development.
-
-### Design Concerns 
-
-The base is too small to fit a stepper driver. 
-
----
+- Reduced the size of the base and the platform supporting the second joint.
+- Redesigned the second arm section to make room for an additional servo.
+- Added a third joint, turning the arm from a 2-DOF prototype into a 3-DOF system.
+- Making everything smaller improved the overall design, but I made the base too small to easily fit one of the stepper drivers.
+- I also needed to think more about where the electronics were placed because wiring near the rotating base could easily become tangled.
 
 ## Electrical
 
-### Design Changes
-
-- Integrated a dedicated battery pack capable of powering all three motors.
-- Consolidated the control system to a single Arduino.
-
-### Design Reasoning
-
-The original design required two separate Arduinos because I did not have a reliable power source capable of driving multiple motors simultaneously. The addition of the battery pack simplified the wiring and made the overall system much easier to manage.
-
-### Design Concerns 
-
-The driver for the second stepper motor will need to be placed internally to avoid the tangling of wires as the base stepper rotates.
-
----
+- Replaced the two-Arduino setup with a single Arduino controlling all three motors.
+- Added a dedicated battery pack capable of powering the motors from one source.
+- This significantly cleaned up the electrical system compared with Version 1.
+- Packaging the second stepper driver was still a problem because it needed to stay inside the rotating portion of the robot to prevent wires from twisting around the base.
 
 ## Software
 
-### Features Added
-
-- Computer-to-Arduino serial communication.
-- Individual joint control.
-- Adjustable joint speed.
-- Adjustable movement increments.
-- Software-based homing routine using step counting.
-
-### Design Reasoning
-
-This version shifted the project away from manual push-button control and toward software-driven robotic control. Implementing position tracking and homing established the foundation needed for future features such as forward kinematics, inverse kinematics, and ROS integration.
-
-### Design Concerns 
-
-Each motor moves one at a time, which I do not like, I want to implement a way for the robot to go to pre-programmed positions while moving all motors simulataneously. I think messing with the inverse and forward kinematics will help me solve this in a cool way. 
-
----
-
-## Next Goals
-
-- Export the robot to a URDF.
-- Implement forward kinematics.
-- Implement inverse kinematics.
-- Integrate with ROS2.
-- Improve overall mechanical design. 
+- Replaced the physical push buttons with computer-to-Arduino serial communication.
+- Added individual joint control with adjustable speed and movement increments.
+- Added step based position tracking and a software homing routine.
+- One major limitation was that the joints still moved one at a time. I wanted the robot to move multiple joints together and eventually move to commanded positions rather than manually controlling each joint.
