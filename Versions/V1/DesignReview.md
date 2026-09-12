@@ -1,47 +1,25 @@
-# Version 1 - Design Notes
+# Version 1 - Design Review
 
 ## Overview
 
-Version 1 was my initial proof-of-concept robotic arm designed to validate a simple two-degree-of-freedom manipulator while learning the fundamentals of robotic arm design, control, and system integration.
-
----
+Version 1 was my first attempt at designing and building a robotic arm. I kept it to 2 DOF so I could focus on getting the mechanical design, electronics, and basic motor control working before making the system more complicated.
 
 ## Mechanical
 
-### Design Decisions
-- Chose a larger base to provide a stable platform while learning the design process.
-- Designed the arm as a simple 2-DOF manipulator to keep the initial prototype manageable.
-- Prioritized functionality over optimization during the first iteration.
-
-### Lessons Learned
-- The base was larger than necessary for a 2-DOF arm.
-- The design left significant unused internal volume.
-- Future versions would reduce size while improving packaging and rigidity.
-
----
+- Started with a large base to make the arm stable and give myself plenty of room for electronics.
+- After building it, I realized the base was much larger than it needed to be and had a lot of unused space.
+- The overall design worked as a first prototype, but the next version needed to be smaller and package the components better.
 
 ## Electrical
 
-### Design Decisions
-- Used two separate Arduinos to independently control each motor.
-- Powered each servo separately because I did not yet have a reliable 6V power source capable of driving both motors simultaneously.
-
-### Lessons Learned
-- Multiple controllers increased wiring complexity.
-- A dedicated battery pack and shared power distribution would simplify the electrical system.
-
----
+- Used two Arduinos, with each Arduino controlling one servo.
+- Each servo had its own power source because I did not have a good 6V supply that could reliably power both at the same time.
+- This worked for testing, but resulted in a lot of unnecessary wiring and components.
+- For the next version I wanted one controller and a better way to distribute power to all of the motors.
 
 ## Software
 
-### Features
-- Independent control of two joints using four physical push buttons.
-- Manual clockwise and counterclockwise control for each motor.
-- Simple firmware designed to validate motor control and mechanical movement.
-
-### Lessons Learned
-- This version did not include position tracking or a homing routine.
-- Manual button control was effective for testing but would not scale as additional joints were added.
-- Future versions would replace manual controls with computer communication, position tracking, and software-based homing.
----
-
+- Controlled both joints manually using four push buttons for clockwise and counterclockwise movement.
+- The code was very simple and was mainly used to make sure the motors and mechanical design worked.
+- There was no position tracking or homing, so the robot did not know the position of either joint.
+- Adding more joints would make physical button control impractical, so the next version would need computer-based control.
