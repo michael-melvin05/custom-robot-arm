@@ -7,7 +7,7 @@ Version 3 focused on improving the mechanical design and making the arm move mor
 ## Mechanical
 
 - Returned to the larger base from Version 1 after realizing the smaller Version 2 base did not leave enough room for electronics and wiring.
-- Redesigned the shoulder from a single-sided mount to a dual-support structure to improve rigidity.
+- Redesigned the shoulder to a dual support structure to improve rigidity.
 - Redesigned the wrist servo mount for a more secure connection.
 - The mechanical structure is much better than Version 2, but wire routing and electronics packaging can still be improved.
 - The end effector is still very basic and is something I want to redesign in the next version.
