@@ -1,62 +1,33 @@
 # Custom Robot Arm
 
 ## Overview
+Custom 3D printed 3 DOF robot arm to improve in mechanical design, electronics, programming, and robotics. 
 
-This project is a custom robotic arm designed and built from the ground up to develop my skills in robotics, mechanical design, embedded systems, and controls. The project serves as a platform for learning modern robotics concepts while continuously improving both the hardware and software.
+## Features
 
----
-
-## Current Features
-
-- Custom CAD designed in SolidWorks
-- 3D printed structural components
-- Arduino-based control system
-- Computer communication for robot control
-- Simultaneous multi-axis motion using AccelStepper
-- Predefined robot poses
-- Adjustable joint speed and acceleration
-- Software-based homing system without switches or sensors
-
----
-
-## Current Development
-
-- Exporting the robot to URDF
-- Forward Kinematics
-- Inverse Kinematics
-- ROS2 Integration
-
----
+- Custom 3-DOF robotic arm designed in SolidWorks and created using 3D-printed components
+- Arduino based stepper and servo control with computer to microcontroller serial communication
+- Computer based control of individual and coordinated joint movements with adjustable speed and acceleration
+- Software based joint position tracking and homing without physical limit switches
+- Inverse kinematics for end effector positioning and coordinated joint control
+- ROS 2 integration for higher level robot control and communication
+- URDF robot model with joint motion visualized in RViz 
 
 
 ## Design Evolution
 
 ### Version 1
-Initial proof-of-concept focused on validating a basic robotic arm design.
+Initial proof of concept focused creating a basic robotic arm design.
 
 ![V1 Robot Arm](Versions/V1/Images/V1-Iso.png)
 
 ### Version 2
-Added a third degree of freedom, computer-controlled motion, and improved packaging.
+Added a third degree of freedom and joint control through keyboard inputs. improved mechanical design and electrical packaging.
 
 ![V2 Robot Arm](Versions/V2/Images/V2-Iso.png)
 
 ### Version 3
-Refined the mechanical design and implemented coordinated multi-axis motion, creating a more robust platform for future kinematics, URDF generation, and ROS2 integration.
+Improved design and expanded the software to support coordinated joint movement, inverse kinematics, and visualized the robot arm in RViz.   
 
 ![V3 Robot Arm](Versions/V3/Images/V3-Iso.png)
 
-
----
-
-## Project Roadmap
-
-- [x] CAD Design
-- [x] Robot Assembly
-- [x] Arduino Joint Control
-- [x] Software Homing System
-- [ ] URDF Export
-- [ ] Forward Kinematics
-- [ ] Inverse Kinematics
-- [ ] ROS2
-- [ ] MoveIt Integration
