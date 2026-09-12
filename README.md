@@ -1,7 +1,7 @@
 # Custom Robot Arm
 
 ## Overview
-Custom 3D printed 3 DOF robot arm to improve in mechanical design, electronics, programming, and robotics. 
+Custom 3D printed 3 DOF robot arm to improve in mechanical design, electronics, programming, and robotics with budget electronics. 
 
 ## Features
 
