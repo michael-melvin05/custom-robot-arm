@@ -21,7 +21,7 @@ Version 2 was a major upgrade from the first prototype. I added a third degree o
 
 ## Software
 
-- Replaced the physical push buttons with computer-to-Arduino serial communication.
+- Replaced the physical push buttons with serial communication.
 - Added individual joint control with adjustable speed and movement increments.
 - Added step based position tracking and a software homing routine.
 - One major limitation was that the joints still moved one at a time. I wanted the robot to move multiple joints together and eventually move to commanded positions rather than manually controlling each joint.
